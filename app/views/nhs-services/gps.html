@@ -1,0 +1,97 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Content page example - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-u-margin-bottom-4">GPs</h1>
+
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">
+        About GP services, including how to find and register with a local GP and how to book an appointment.  
+      </p>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    {{ promo({
+      "href": "https://www.nhs.uk/service-search/GP/LocationSearch/4",
+      "heading": "Find a GP"
+    }) }}
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/gps/how-to-register-with-a-gp-practice/">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">How to register with a GP practice</h2>
+          
+            <p class="nhsuk-promo__description">Find out what GP practices do, how to choose one and how to register with a GP</p>
+          
+        </div>
+      </a>
+    </div>
+
+      
+        
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/gps/gp-appointments-and-bookings/">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">GP appointments and bookings</h2>
+          
+            <p class="nhsuk-promo__description">Information on how to book a GP appointment, making the most of your appointment and making a complaint</p>
+          
+        </div>
+      </a>
+    </div>
+
+      
+        
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/gps/referrals-for-specialist-care/">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Referrals for specialist care</h2>
+          
+            <p class="nhsuk-promo__description">Read more about GP referral to specialist services and what choices you have</p>
+          
+        </div>
+      </a>
+    </div>
+
+      
+        
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/gps/what-to-ask-your-doctor/">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">What to ask your doctor</h2>
+          
+            <p class="nhsuk-promo__description">Helpful questions to ask your doctor during your appointment</p>
+          
+        </div>
+      </a>
+    </div>
+
+  </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+// Components that are not in the NHS.UK frontend library
+@import 'components/panel-confirmation';
+@import 'components/related-nav';
+
+///////////////////////////////////////////
+// Add your custom CSS/Sass styles below... 
+///////////////////////////////////////////
+
+.nhsuk-promo--mute .nhsuk-promo__link-wrapper {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.nhsuk-promo--mute .nhsuk-promo__link-wrapper .nhsuk-promo__content {
+    padding: 0;
+}
+
+.nhsuk-promo--mute .nhsuk-promo__link-wrapper:focus, .nhsuk-promo--mute .nhsuk-promo__link-wrapper:hover {
+
+    background-color: transparent;
+    box-shadow: none;
+    outline: 4px solid #ffb81c;
+    outline-offset: 12px;
+
+}

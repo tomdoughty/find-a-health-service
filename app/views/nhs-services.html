@@ -1,0 +1,203 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Content page example - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-u-margin-bottom-4">NHS services</h1>
+
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">
+        About the main services provided on the NHS, from GPs and dentists to hospital and emergency care. 
+      </p>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+              
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          
+          <div class="nhsuk-promo nhsuk-promo--mute">
+            <a class="nhsuk-promo__link-wrapper" href="#">
+              <div class="nhsuk-promo__content">
+                <h2 class="nhsuk-promo__heading">NHS App</h2>
+                
+                  <p class="nhsuk-promo__description">The new, simple and secure way to access a range of NHS services on your smartphone or tablet</p>
+                
+              </div>
+            </a>
+          </div>
+
+        </div>
+              
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          
+          <div class="nhsuk-promo nhsuk-promo--mute">
+            <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/urgent-and-emergency-care/">
+              <div class="nhsuk-promo__content">
+                <h2 class="nhsuk-promo__heading">Urgent and emergency care</h2>
+                <p class="nhsuk-promo__description">Services the NHS provides if you need urgent or emergency medical help</p>
+              </div>
+            </a>
+          </div>
+        </div>
+              
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+                  
+        <div class="nhsuk-promo nhsuk-promo--mute">
+          <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/hospitals/">
+            <div class="nhsuk-promo__content">
+              <h2 class="nhsuk-promo__heading">Hospitals</h2>
+              <p class="nhsuk-promo__description">About NHS hospitals, including going into hospital, staying in hospital and being discharged</p>
+            </div>
+          </a>
+        </div>
+
+      </div>  
+
+    </div>
+  </div>
+
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          <div class="nhsuk-promo nhsuk-promo--mute">
+            <a class="nhsuk-promo__link-wrapper" href="/nhs-services/gps">
+              <div class="nhsuk-promo__content">
+                <h2 class="nhsuk-promo__heading">GPs</h2>
+                <p class="nhsuk-promo__description">About GP services, including how to find and register with a local GP and how to book an appointment</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          <div class="nhsuk-promo nhsuk-promo--mute">
+            <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/dentists/">
+              <div class="nhsuk-promo__content">
+                <h2 class="nhsuk-promo__heading">Dentists</h2>
+                <p class="nhsuk-promo__description">About NHS dental services, including how to find an NHS dentist and how much treatment costs</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          <div class="nhsuk-promo nhsuk-promo--mute">
+            <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/pharmacies/">
+              <div class="nhsuk-promo__content">
+                <h2 class="nhsuk-promo__heading">Pharmacies</h2>
+                <p class="nhsuk-promo__description">How pharmacists can help you with medical advice and medicines</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>  
+
+    <div class="nhsuk-grid-column-full">
+
+            <div class="nhsuk-grid-row nhsuk-promo-group">
+                
+                  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+                    
+                    <div class="nhsuk-promo nhsuk-promo--mute">
+          <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/mental-health-services/">
+            <div class="nhsuk-promo__content">
+              <h2 class="nhsuk-promo__heading">Mental health services</h2>
+              
+                <p class="nhsuk-promo__description">Information about NHS mental health services</p>
+              
+            </div>
+          </a>
+        </div>
+
+                  </div>
+                
+                  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+                    
+                    <div class="nhsuk-promo nhsuk-promo--mute">
+          <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/sexual-health-services/">
+            <div class="nhsuk-promo__content">
+              <h2 class="nhsuk-promo__heading">Sexual health services</h2>
+              
+                <p class="nhsuk-promo__description">Information about NHS sexual health services</p>
+              
+            </div>
+          </a>
+        </div>
+
+                  </div>
+                
+                  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+                    
+                    <div class="nhsuk-promo nhsuk-promo--mute">
+          <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/opticians/">
+            <div class="nhsuk-promo__content">
+              <h2 class="nhsuk-promo__heading">Opticians</h2>
+              
+                <p class="nhsuk-promo__description">Where to find an optician and what happens when you see them</p>
+              
+            </div>
+          </a>
+        </div>
+
+                  </div>
+        
+      </div>
+
+    </div>
+
+    <div class="nhsuk-grid-column-full">
+
+          <div class="nhsuk-grid-row nhsuk-promo-group">
+              
+                <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+                  
+                  <div class="nhsuk-promo nhsuk-promo--mute">
+        <a class="nhsuk-promo__link-wrapper" href="/using-the-nhs/nhs-services/visiting-or-moving-to-england/">
+          <div class="nhsuk-promo__content">
+            <h2 class="nhsuk-promo__heading">Visiting or moving to England</h2>
+            
+              <p class="nhsuk-promo__description">Advice about healthcare if you're planning to visit or move to England</p>
+            
+          </div>
+        </a>
+      </div>
+
+                </div>
+              
+            </div>
+
+    </div>
+
+  </div>
+{% endblock %}
