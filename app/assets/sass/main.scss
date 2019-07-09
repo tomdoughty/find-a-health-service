@@ -5,24 +5,30 @@
 @import 'components/panel-confirmation';
 @import 'components/related-nav';
 
+//Homepage specific styles
+@import 'components/homepage';
+
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
 
-.nhsuk-promo--mute .nhsuk-promo__link-wrapper {
-    background-color: transparent;
-    box-shadow: none;
-}
+// Variant for a promo with a transparent background
+.nhsuk-promo--mute {
+    .nhsuk-promo__link-wrapper {
+      background-color: transparent;
+      box-shadow: none;
+  
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        box-shadow: none;
+        outline: nhsuk-spacing(1) solid $nhsuk-focus-color;
+        outline-offset: nhsuk-spacing(1) + nhsuk-spacing(2);
+      }
+  
+      .nhsuk-promo__content {
+          padding: nhsuk-spacing(0);
+      }
+    }
+  }
 
-.nhsuk-promo--mute .nhsuk-promo__link-wrapper .nhsuk-promo__content {
-    padding: 0;
-}
-
-.nhsuk-promo--mute .nhsuk-promo__link-wrapper:focus, .nhsuk-promo--mute .nhsuk-promo__link-wrapper:hover {
-
-    background-color: transparent;
-    box-shadow: none;
-    outline: 4px solid #ffb81c;
-    outline-offset: 12px;
-
-}
