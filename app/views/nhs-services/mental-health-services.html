@@ -1,0 +1,110 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Pharmacies - NHS
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-u-margin-bottom-4">Mental health services</h1>
+
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">
+        Information about NHS mental health services. 
+      </p>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    {{ promo({
+      "href": "https://beta.nhs.uk/find-a-psychological-therapies-service/",
+      "heading": "Find a psychological therapies service"
+    }) }}
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">How to access mental health services</h2>
+          <p class="nhsuk-promo__description">Information on accessing mental health services and how to choose them</p>    
+        </div>
+      </a>
+    </div> 
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Dealing with a mental health crisis or emergency</h2>
+          <p class="nhsuk-promo__description">Read more about services to help you deal with a mental health crisis or emergency</p>   
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Mental health assessments</h2>
+          <p class="nhsuk-promo__description">Find out how a mental health assessment works and how to get a second opinion</p>   
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Mental Health Act</h2>
+          <p class="nhsuk-promo__description">Read more about your rights under the Mental Health Act</p>   
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Child and adolescent mental health services (CAMHS)</h2>
+          <p class="nhsuk-promo__description">Information about child and adolescent mental health services</p>   
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Child and adolescent mental health services information for parents and carers</h2>
+          <p class="nhsuk-promo__description">If you're worried about a child or need advice and support for coping with anything affecting your child's emotional or mental health</p>   
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Mental Health Act: your rights (easy read)</h2>
+          <p class="nhsuk-promo__description">An easy read guide to your rights, including easy read leaflets you can download</p>   
+        </div>
+      </a>
+    </div>
+
+  </div>
+{% endblock %}

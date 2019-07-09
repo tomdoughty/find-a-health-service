@@ -1,0 +1,125 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Hospitals - NHS
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-u-margin-bottom-4">Hospitals</h1>
+
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">
+        About NHS hospitals, including going into hospital, staying in hospital and being discharged. 
+      </p>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    {{ promo({
+      "href": "https://www.nhs.uk/service-search/Hospital/LocationSearch/7",
+      "heading": "Find a hospital"
+    }) }}
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">About NHS hospital services</h2>
+          
+            <p class="nhsuk-promo__description">Read about NHS hospital services, including how to book an appointment and choosing a hospital or consultant</p>
+          
+        </div>
+      </a>
+    </div>      
+        
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Going into hospital as an inpatient or outpatient</h2>
+          
+            <p class="nhsuk-promo__description">Read about how you're admitted to hospital, including admission letters and cancelling or rearranging appointments</p>
+          
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Staying in hospital as an inpatient</h2>
+          
+            <p class="nhsuk-promo__description">Information and advice if you need to stay in hospital</p>
+          
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Outpatients and day patients</h2>
+          
+            <p class="nhsuk-promo__description">Information for outpatients and day patients</p>
+          
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Visiting someone in hospital</h2>
+          
+            <p class="nhsuk-promo__description">Things you should know if you're visiting someone in hospital</p>
+          
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Being discharged from hospital</h2>
+          
+            <p class="nhsuk-promo__description">Everything you need to know about being discharged from hospital, including information on medicines, transport, sick notes and more</p>
+          
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Guide to NHS waiting times in England</h2>
+          
+            <p class="nhsuk-promo__description">Information about maximum waiting times, comparing waiting times and what happens if your operation is cancelled</p>
+          
+        </div>
+      </a>
+    </div>
+
+
+  </div>
+{% endblock %}

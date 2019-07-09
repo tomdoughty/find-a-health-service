@@ -1,0 +1,96 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Opticians - NHS
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-u-margin-bottom-4">Visiting or moving to England</h1>
+
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">
+        Advice about healthcare if you're planning to visit or move to England. 
+      </p>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    <div class="nhsuk-promo nhsuk-promo--mute">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">How to access NHS services in England if you're visiting from abroad</h2>
+          <p class="nhsuk-promo__description">How to access NHS services for people visiting or moving to England</p>    
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Visitors from the European Economic Area (EEA) or Switzerland</h2>
+          <p class="nhsuk-promo__description">Find out about getting unplanned treatment while you're visiting England</p>    
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Visitors from outside the European Economic Area (EEA)</h2>
+          <p class="nhsuk-promo__description">What to do of you need unplanned treatment on a temporary visit to England</p>    
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Visitors who do not need to pay for NHS treatment</h2>
+          <p class="nhsuk-promo__description">Find out if you are exempt from paying for NHS hospital treatments</p>    
+        </div>
+      </a>
+    </div> 
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Moving to England from the European Economic Area (EEA) or Switzerland</h2>
+          <p class="nhsuk-promo__description">Find out about accessing NHS services if you move to England from the EEA or Switzerland</p>    
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Moving to England from outside the European Economic Area (EEA)</h2>
+          <p class="nhsuk-promo__description">Read about how the NHS works for people moving to England from outside the EEA</p>    
+        </div>
+      </a>
+    </div> 
+
+  </div>
+{% endblock %}

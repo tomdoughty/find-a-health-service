@@ -1,0 +1,97 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Urgent and emergency care - NHS
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-u-margin-bottom-4">Urgent and emergency care</h1>
+
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">
+        Services the NHS provides if you need urgent or emergency medical help. 
+      </p>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    {{ promo({
+      "href": "https://www.nhs.uk/Service-Search/Accident-and-emergency-services/LocationSearch/428",
+      "heading": "Find your nearest A&E"
+    }) }}
+
+    {{ promo({
+      "href": "https://www.nhs.uk/service-search/Urgent-Care/LocationSearch/0",
+      "heading": "Find other urgent care services"
+    }) }}
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">NHS 111</h2>
+          <p class="nhsuk-promo__description">Find out about the NHS 111 telephone and online services</p>    
+        </div>
+      </a>
+    </div> 
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">When to go to A&E</h2>
+          <p class="nhsuk-promo__description">When to go to A&E, how to find your nearest A&E and what happens when you get there</p>   
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">When to visit an urgent treatment centre</h2>
+          <p class="nhsuk-promo__description">Read about urgent care centres, including when to use them and how to get medical help</p>   
+        </div>
+      </a>
+    </div> 
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">When to call 999</h2>
+          <p class="nhsuk-promo__description">When to call 999 and what happens when you do</p>   
+        </div>
+      </a>
+    </div>
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">NHS out-of-hours services</h2>
+          <p class="nhsuk-promo__description">How to get help if your GP practice or dentist is closed</p>   
+        </div>
+      </a>
+    </div>          
+
+  </div>
+{% endblock %}

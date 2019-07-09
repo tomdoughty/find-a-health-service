@@ -1,0 +1,57 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Opticians - NHS
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-u-margin-bottom-4">Opticians</h1>
+
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">
+        Where to find an optician and what happens when you see them. 
+      </p>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    {{ promo({
+      "href": "https://www.nhs.uk/service-search/Opticians/LocationSearch/9",
+      "heading": "Find an opticians"
+    }) }}
+
+
+    <div class="nhsuk-promo nhsuk-promo--mute nhsuk-u-margin-top-8">
+      <a class="nhsuk-promo__link-wrapper" href="#">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Visiting an optician</h2>
+          <p class="nhsuk-promo__description">How often to get your eyes tested and what happens when you see an optician</p>    
+        </div>
+      </a>
+    </div> 
+
+  </div>
+{% endblock %}
