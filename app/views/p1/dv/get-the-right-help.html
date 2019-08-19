@@ -18,13 +18,14 @@
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-  <div class="nhsuk-width-container">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p1/home">Home</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p1/home">Home</a></p>
-  </div>
-</nav>
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p1/dv/find-nhs-help">Find NHS help</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p1/dv/find-nhs-help">Find NHS help</a></p>
+    </div>
+  </nav>
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -34,19 +35,19 @@
     <div class="nhsuk-grid-column-two-thirds">
 
       <h1>
-        Find NHS help
+        Get the right help
       </h1>
 
       <div class="nhsuk-form-group">
         <label class="nhsuk-label" for="input-width-10">
-          Postcode
+          Tell us about your condition or symptom. Use keywords like 'rash' or body parts like 'stomach ache' or 'broken tooth’.
         </label>
-        <input class="nhsuk-input" id="input-width-10" name="test-width-10" type="text">
+        <input class="nhsuk-input nhsuk-u-margin-top-4" id="input-width-10" name="test-width-10" type="text">
       </div>
 
-      <button class="nhsuk-button" type="submit">
+      <a href="/p1/dv/options"><button class="nhsuk-button" type="submit">
         Continue
-      </button>
+      </button></a>
 
 
     </div>
