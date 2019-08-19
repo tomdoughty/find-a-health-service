@@ -17,6 +17,14 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p1/c/home">Home</a></p>
+  </div>
+</nav>
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -26,30 +34,19 @@
     <div class="nhsuk-grid-column-two-thirds">
 
       <h1>
-        Find a health service
+        Find NHS help
       </h1>
 
-      <h2>Prototypes</h2>
-      <div class="nhsuk-panel">
-        <h3><a href="/p1">Prototype 1</a></h3>
-        <ul>
-          <li>TBD</li>
-          <li>User research: 20th August</li>
-        </ul>  
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-20">
+          Postcode
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
       </div>
 
-      <h2 class="nhsuk-u-margin-top-8">Discovery experiments</h2>
-        <h3><a href="discovery-experiment">Experiment 1</a></h3>
-        <ul>
-          <li>Existing 'Services hub' linked from site navigation.</li>
-          <li>User research: 10th July</li>
-        </ul>
-
-      <h2 class="nhsuk-u-margin-top-8">Existing stuff</h2>
-      <ul>
-        <li><a href="https://www.nhs.uk/service-search">Main service finder</a></li>
-        <li><a href="https://www.nhs.uk/using-the-nhs/nhs-services/">NHS services 'hub'</a></li>
-      </ul>
+      <a href="/p1/c/get-the-right-help"><button class="nhsuk-button" type="submit">
+        Continue
+      </button></a>
 
 
     </div>
