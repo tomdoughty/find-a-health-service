@@ -1,0 +1,120 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find a health service prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p1/c/find-nhs-help">Find NHS help</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p1/c/find-nhs-help">Find NHS help</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Get help with 'back pain'
+      </h1>
+
+      <p>Back pain is very common and normally improves within a few weeks or months.</p>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            How to treat yourself
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>The following tips may help reduce your backache and speed up your recovery:</p>
+          <ul>
+            <li>stay as active as possible and try to continue your daily activities – this is one of the most important things you can do, as resting for long periods is likely to make the pain worse</li>
+            <li>try <a href="#">exercises and stretches for back pain</a>; other activities such as <a href="">walking</a>, <a href="">swimming</a>, <a href="">yoga</a> and <a href="">pilates</a> may also be helpful </li>
+            <li>take <a href="">anti-inflammatory painkillers</a>, such as <a href="">ibuprofen</a> – remember to check the medicine is safe for you to take first and ask a pharmacist if you're not sure</li>
+            <li>use hot or cold compression packs for short-term relief – you can buy these from your local pharmacy, or a hot water bottle or a bag of frozen vegetables wrapped in a cloth will work just as well</li>
+          </ul>
+          <p>Although it can be difficult, it helps if you stay optimistic and recognise that your pain should get better, as people who manage to stay positive despite their pain tend to recover quicker.</p>
+        </div>
+      </details>
+
+      <h2 class="nhsuk-heading-m nhsuk-u-margin-top-8">Ways to get help</h2>
+
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-6">If it's not urgent</h3>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Get help from a GP
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Back pain usually gets better on its own within a few weeks or months and you may not need to see a doctor or other healthcare professional.</p>
+          <p>But it's a good idea to get help if:</p>
+          <ul>
+            <li>the pain does not start to improve within a few weeks</li>
+            <li>the pain stops you doing your day-to-day activities</li>
+            <li>the pain is very severe or gets worse over time</li>
+            <li>you're worried about the pain or are struggling to cope</li>
+          </ul>
+          <p>You can <a href="#">see a GP</a>, who will ask about your symptoms, examine your back and discuss possible treatments.</p>
+          <p>They may refer you to a specialist doctor or a physiotherapist for further help.</p>
+          <p>Or you may want to consider approaching a physiotherapist directly. Some NHS physiotherapists accept appointments without a doctor's referral, or you could choose to pay for private treatment.</p>
+          <p>Read more about <a href="#">how to find a physiotherapist.</a></p>
+          </ul>
+          
+        </div>
+      </details>
+
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-6">If you think it’s urgent or you’re not sure</h3>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Get advice from 111
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>You should contact a GP or <a href="#">NHS 111</a> immediately if you have back pain and:</p>
+          <ul>
+            <li>numbness or tingling around your genitals or buttocks</li>
+            <li>difficulty peeing</li>
+            <li>loss of bladder or bowel control </li>
+            <li><a href="#">chest pain</a></li>
+            <li>a high temperature of 38C or above</li>
+            <li><a href="#">unexplained weight loss</a></li>
+            <li>a swelling or a deformity in your back</li>
+            <li>it does not improve after resting or is worse at night</li>
+            <li>it started after a serious accident, such as after a car accident</li>
+          </ul>
+          <p>These problems could be a sign of something more serious and need to be checked urgently.</p>
+          
+        </div>
+      </details>
+
+
+
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,151 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find a health service prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p1/c/find-nhs-help">Find NHS help</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p1/c/find-nhs-help">Find NHS help</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Get help with 'trouble sleeping'
+      </h1>
+
+      <p>Insomnia means you regularly have problems sleeping. It usually gets better by changing your sleeping habits.</p>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            How to treat yourself
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Insomnia usually gets better by changing your sleeping habits.</p>
+          <h3>Do</h3>
+          <ul>
+            <li>go to bed and wake up at the same time every day – only go to bed when you feel tired</li>
+            <li>relax at least 1 hour before bed – for example, take a bath or read a book</li>
+            <li>make sure your bedroom is dark and quiet – use thick curtains, blinds, an eye mask or ear plugs</li>
+            <li>exercise regularly during the day</li>
+            <li>make sure your mattress, pillows and covers are comfortable</li>
+          </ul>
+          <h3>Don't</h3>
+          <ul>
+            <li>do not smoke or drink alcohol, tea or coffee at least 6 hours before going to bed</li>
+            <li>do not eat a big meal late at night</li>
+            <li>do not exercise at least 4 hours before bed</li>
+            <li>do not watch television or use devices right before going to bed – the bright light makes you more awake</li>
+            <li>do not nap during the day</li>
+            <li>do not drive when you feel sleepy</li>
+            <li>do not sleep in after a bad night's sleep – stick to your regular sleeping hours instead</li>
+          </ul>
+        </div>
+      </details>
+
+      <h2 class="nhsuk-heading-m nhsuk-u-margin-top-8">Ways to get help</h2>
+
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-6">If it's not urgent</h3>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Get help from a pharmacy
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>You can get sleeping aids from a pharmacy. But they will not get rid of your insomnia and they have many side effects.</p>
+          <p>Sleeping aids can often make you drowsy the next day. You might find it hard to get things done.</p>
+          <p>You should not drive the day after taking them.</p>
+
+          <div class="nhsuk-action-link">
+              <a class="nhsuk-action-link__link" href="#">
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                </svg>
+                <span class="nhsuk-action-link__text">Find a pharmacy</span>
+              </a>
+            </div>
+          
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Get help from a GP
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>See a GP if:</p>
+          <ul>
+            <li>changing your sleeping habits has not worked</li>
+            <li>you have had trouble sleeping for months</li>
+            <li>your insomnia is affecting your daily life in a way that makes it hard for you to cope</li>
+          </ul>
+
+          <div class="nhsuk-action-link">
+              <a class="nhsuk-action-link__link" href="#">
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                </svg>
+                <span class="nhsuk-action-link__text">Find a GP</span>
+              </a>
+            </div>
+          
+        </div>
+      </details>
+
+      <h3 class="nhsuk-heading-s nhsuk-u-margin-top-6">If you think it’s urgent or you’re not sure</h3>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Get advice from 111
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>To get help from NHS 111, you can:</p>
+          <ul>
+            <li>go to <a href=#>111.nhs.uk</a> (for people aged 5 and over only)</li>
+            <li>call 111</li>
+          </ul>
+          <p>NHS 111 is available 24 hours a day, 7 days a week.</p>
+          
+        </div>
+      </details>
+
+
+
+
+    </div>
+  </div>
+{% endblock %}
