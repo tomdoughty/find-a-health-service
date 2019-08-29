@@ -21,6 +21,36 @@ width: 100%;  /* The width is the width of the web page */
 }
 
 
+// Stars
+.stars {
+  color: #ffd300;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+  text-shadow: 1px 1px 1px #768692; }
+
+@media (min-width: 40.0625em) {
+  .stars {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px; } }
+
+.starssmall {
+  color: #ffd300;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+  text-shadow: 1px 1px 1px #768692; }
+
+@media (min-width: 40.0625em) {
+  .starssmall {
+    font-size: 1§8px;
+    font-weight: 600;
+    line-height: 28px; } }
+
 // Variant for a promo with a transparent background
 .nhsuk-promo--mute {
     .nhsuk-promo__link-wrapper {
