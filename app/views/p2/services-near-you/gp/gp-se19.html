@@ -1,0 +1,212 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-home-p2.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find a health service prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p2/">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p2/services-near-you">Services near you</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p2/services-near-you/gp">Find a GP</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p2/services-near-you/gp">Find a GP</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        GPs near "SE19"
+      </h1>
+      
+      <p class="nhsuk-u-margin-bottom-2">Showing a list. <a href="/p2/services-near-you/gp/gp-se19-map">View as map.</a></p>
+
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Edit preferences
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+          <div class="nhsuk-form-group">
+
+            <fieldset class="nhsuk-fieldset" aria-describedby="nationality-hint">
+              <legend class="nhsuk-fieldset__legend">
+                <h3>Accessibility</h3>
+              </legend>
+
+              <span class="nhsuk-hint" id="nationality-hint">
+                Select all options that are relevant to you.
+              </span>
+
+              <div class="nhsuk-checkboxes">
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+                    Braille translation service
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+                    Disabled parking
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                    Disabled WC
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                    Induction loop
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                    Text relay
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                    Signing service available
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                    Wheelchair access
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                    Step free access
+                  </label>
+                </div>
+
+
+              </div>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset class="nhsuk-fieldset" aria-describedby="nationality-hint">
+              <legend class="nhsuk-fieldset__legend">
+                <h3>Parking</h3>
+              </legend>
+
+              <span class="nhsuk-hint" id="nationality-hint">
+                Select all options that are relevant to you.
+              </span>
+
+              <div class="nhsuk-checkboxes">
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+                    Example
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+                    Example
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                    Example
+                  </label>
+                </div>
+
+              </div>
+            </fieldset>
+
+          </div>
+
+        </div>
+      </details>
+
+      <hr>
+      <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">0.5 miles away</p>
+      <h2><a href="#">Paxton Green Group Practice</a></h2>
+      <ul class="nhsuk-list">
+        <li>Paxton Green Health Centre, 1 Alleyn Park, London, Greater London, SE21 8AU</li>
+        <li>02086 706 878</li>
+        <li><span class="stars">****</span> (21 ratings)</li>
+        <li>CQC rating: Good</li>
+      </ul>
+      <hr>
+      <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">0.7 miles away</p>
+      <h2><a href="#">Wells Park Practice</a></h2>
+      <ul class="nhsuk-list">
+        <li>1 Wells Park Road, Sydenham, London, Greater London, SE26 6JQ</li>
+        <li>0208 699 2840</li>
+        <li>3.5 out of 5 stars (39 ratings)</li>
+        <li>CQC rating: Requires improvement</li>
+      </ul>
+      <hr>
+      <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">1.0 miles away</p>
+      <h2><a href="#">North Wood Group Practice @ Crown Dale</a></h2>
+      <ul class="nhsuk-list">
+        <li>61 Crown Dale, London, Greater London, SE19 3NY</li>
+        <li>02086 702 414</li>
+        <li>3 out of 5 stars (16 ratings)</li>
+        <li>CQC rating: Good</li>
+      </ul>
+      <hr>
+      <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">1.0 miles away</p>
+      <h2><a href="#">Upper Norwood Group Practice</a></h2>
+      <ul class="nhsuk-list">
+        <li>130 Church Road, London, Greater London, SE19 2NT </li>
+        <li>0208 771 6050</li>
+        <li>3.5 out of 5 stars (20 ratings)</li>
+        <li>CQC rating: Good</li>
+      </ul>
+      <hr>
+
+      <p><a href="#">Show more GPs</a></p>
+
+      
+
+
+    </div>
+  </div>
+{% endblock %}

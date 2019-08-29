@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-home-p2.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -17,6 +17,14 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p2/">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p2/">Home</a></p>
+  </div>
+</nav>
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -26,22 +34,22 @@
     <div class="nhsuk-grid-column-two-thirds">
 
       <h1>
-        Find a health service
+        Services near you
       </h1>
-
-      <h2>Prototypes</h2>
-      <div class="nhsuk-panel">
-        <h3><a href="/p2">Prototype 2</a></h3>
-        <ul>
-          <li>WIP</li>
-        </ul>  
+      
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-20">
+          Enter a town, city or postcode in England
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-30" id="input-width-20" name="test-width-20" type="text">
       </div>
 
-      <h3><a href="/p1">Prototype 1</a></h3>
-      <ul>
-        <li>User research: 20th August</li>
-      </ul>  
+      <button class="nhsuk-button" type="submit">
+        Search
+      </button>
 
+      <p><a href="#">Use your location</a>
+      
     </div>
   </div>
 {% endblock %}
