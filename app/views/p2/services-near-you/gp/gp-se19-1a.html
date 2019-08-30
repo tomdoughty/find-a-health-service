@@ -49,14 +49,36 @@
 
           <div class="nhsuk-form-group">
 
-            <fieldset class="nhsuk-fieldset" aria-describedby="nationality-hint">
+          <fieldset class="nhsuk-fieldset" aria-describedby="nationality-hint">
               <legend class="nhsuk-fieldset__legend">
-                <h3>Accessibility</h3>
+                <h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-0">New patients</h3>
               </legend>
 
-              <span class="nhsuk-hint" id="nationality-hint">
-                Select all options that are relevant to you.
-              </span>
+              <div class="nhsuk-checkboxes">
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+                    Accepting children (up to the age of 18)
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+                    Accepting adults (18 and over)
+                  </label>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <br>
+
+            <fieldset class="nhsuk-fieldset" aria-describedby="nationality-hint">
+              <legend class="nhsuk-fieldset__legend">
+                <h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-0">Accessibility</h3>
+              </legend>
 
               <div class="nhsuk-checkboxes">
 
@@ -120,37 +142,40 @@
               </div>
             </fieldset>
 
-            <br><br>
+            <br>
 
             <fieldset class="nhsuk-fieldset" aria-describedby="nationality-hint">
               <legend class="nhsuk-fieldset__legend">
-                <h3>Parking</h3>
+                <h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-0">Facilities</h3>
               </legend>
-
-              <span class="nhsuk-hint" id="nationality-hint">
-                Select all options that are relevant to you.
-              </span>
 
               <div class="nhsuk-checkboxes">
 
                 <div class="nhsuk-checkboxes__item">
                   <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
-                    Example
+                    Car parking
                   </label>
                 </div>
 
                 <div class="nhsuk-checkboxes__item">
                   <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
-                    Example
+                    Cycle parking
                   </label>
                 </div>
 
                 <div class="nhsuk-checkboxes__item">
                   <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
-                    Example
+                    Toilet
+                  </label>
+                </div>
+
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                    Baby changing facilities
                   </label>
                 </div>
 
