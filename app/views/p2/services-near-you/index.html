@@ -31,36 +31,39 @@
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
   <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
+    <div class="nhsuk-grid-column-full">
 
-      <h1>
-        Services near you
+      <h1 class="nhsuk-u-margin-bottom-4">
+        Find services near you
       </h1>
-      
-      <h2>Get medical help</h2>
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label nhsuk-u-margin-bottom-4" for="input-width-20">
-          Tell us about your condition or symptom. Use keywords like 'rash' or body parts like 'stomach ache' or 'broken tooth’. 
-        </label>
-        <input class="nhsuk-input nhsuk-input--width-30" id="input-width-20" name="test-width-20" type="text">
-      </div>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">Blurb to summarise section here.</p>
+    </div>
+  </div>
+  
 
-      <button class="nhsuk-button" type="submit">
-        Search
-      </button>
-
-      <h2 class="nhsuk-u-margin-top-8">Find NHS services</h2>
-      <ul class="nhsuk-list">
-        <li><a href="/p2/services-near-you/gp">Find a GP</a></li>
-        <li><a href="/p2/services-near-you/dentist">Find a dentist</a></li>
-        <li><a href="#">Find a pharmacy</a></li>
-        <li><a href="#">Find an optician</a></li>
-        <li><a href="#">Find sexual health services</a></li>
-        <li><a href="#">Find urgent care services</a></li>
-        <li><a href="#">Find your nearest A&E</a></li>
-        <li><a href="#">Find other NHS services</a></li>
-      </ul>
-
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+        <ul class="nhsuk-list">
+          <li><a href="/p2/services-near-you/gp">Find a GP</a></li>
+          <li><a href="/p2/services-near-you/dentist">Find a dentist</a></li>
+          <li><a href="#">Find a pharmacy</a></li>
+          <li><a href="#">Find sexual health services</a></li>
+          <li><a href="#">Find other NHS services</a></li>
+        </ul>
+    </div>
+    <div class="nhsuk-grid-column-one-half">  
+          <ul class="nhsuk-list">
+            <li><a href="#">Find urgent care services</a></li>
+            <li><a href="#">Go to 111.nhs.uk</a> or <a href="#">call 111</a></li>
+          </ul>
+    </div>
+  </div>
+  
+  <div class="nhsuk-panel">
+    <h2 class="nhsuk-heading-m">Emergencies</h2>
+    <p>If someone is seriously ill or injured and their life is at risk.</p>   
+    <p><a href="#">Find your nearest A&E</a> or <a href="#">call 999</a>.</p>
+  </div>
 
     </div>
   </div>
