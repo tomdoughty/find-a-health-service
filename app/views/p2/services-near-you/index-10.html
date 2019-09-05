@@ -1,0 +1,139 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-home-p2.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find a health service prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p2/">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p2/">Home</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <h1 class="nhsuk-u-margin-bottom-8">
+        Find services near you
+      </h1>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+      <div class="nhsuk-promo nhsuk-promo--small nhsuk-u-margin-bottom-4">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Find a GP</h3>
+          </div>
+        </a>
+      </div>
+  
+      <div class="nhsuk-promo nhsuk-promo--small nhsuk-u-margin-bottom-4">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Find a dentist</h3>
+          </div>
+        </a>
+      </div>
+      <div class="nhsuk-promo nhsuk-promo--small nhsuk-u-margin-bottom-4">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Find a pharmacy</h3>
+          </div>
+        </a>
+      </div>
+      <div class="nhsuk-promo nhsuk-promo--small nhsuk-u-margin-bottom-4">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Find sexual health services</h3>
+          </div>
+        </a>
+      </div>
+      <div class="nhsuk-promo nhsuk-promo--small nhsuk-u-margin-bottom-4">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Find other services</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+ 
+
+        
+  <h2 class="nhsuk-heading-m nhsuk-u-margin-top-8">If you need help now, but it's not an emergency</h2>
+
+  <div class="nhsuk-grid-row nhsuk-promo-group">
+    <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+      <div class="nhsuk-promo nhsuk-promo--small">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Find urgent care services</h3>
+            <p class="nhsuk-promo__description">This includes x, y and z</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+      <div class="nhsuk-promo nhsuk-promo--small">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Go to 111.nhs.uk</h3>
+            <p class="nhsuk-promo__description">This includes x, y and z</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="nhsuk-heading-m nhsuk-u-margin-top-8">Emergencies</h2>
+
+  <div class="nhsuk-grid-row nhsuk-promo-group">
+    <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+      <div class="nhsuk-promo nhsuk-promo--small">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Find your nearest A&E</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+      <div class="nhsuk-promo nhsuk-promo--small">
+        <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+          <div class="nhsuk-promo__content">
+            <h3 class="nhsuk-promo__heading">Call 999</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  </div>
+</div>
+{% endblock %}
