@@ -1,0 +1,236 @@
+<!-- This layout is setup for NHS.UK pages -->
+
+<!-- Extends the layout from /docs/views/layouts/layout.html -->
+{% extends "layout.html" %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  Org name - Overview
+{% endblock %}
+
+<!-- Header goes inside this block -->
+{% block header %}
+  {{ header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+          "url"  : "#",
+          "label" : "Health A-Z"
+        },
+        {
+          'url' : '#',
+          'label' : 'Live Well'
+        },
+        {
+          'url'  : '#',
+          'label' : 'Care and support'
+        },
+        {
+          'url'  : '#',
+          'label' : 'Health news'
+        },
+        {
+          'url' : '/p2/services-near-you/',
+          'label' : 'Services near you'
+        }
+      ]
+    })
+  }}
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p2/">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p2/services-near-you">Services near you</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p2/services-near-you/dentist">Find a dentist</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p2/services-near-you/dentist">Find a dentist</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        <span role="text">
+          Overview
+          <span class="nhsuk-page-heading__small">
+            <span class="visually-hidden"> -</span> 
+            Camden Pct Community Dental Services
+          </span>
+        </span>
+      </h1>
+
+      <nav class="nhsuk-contents-list nhsuk-u-margin-bottom-6" role="navigation" aria-label="Pages in this guide">
+        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+        <ol class="nhsuk-contents-list__list">
+          <li class="nhsuk-contents-list__item" aria-current="page">
+            <span class="nhsuk-contents-list__current">Overview</span>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="/p2/services-near-you/dentist/profiles/camden-pct/services/">Treatment and services</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="/p2/services-near-you/dentist/profiles/camden-pct/ratings-reviews/">Ratings and reviews</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="/p2/services-near-you/dentist/profiles/camden-pct/leave-review/">Leave a review</a>
+          </li>
+        </ol>
+      </nav>
+
+    </div>
+
+  </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+    <h2>Contact us</h2>
+      <div class="nhsuk-grid-row nhsuk-panel-group nhsuk-u-margin-bottom-8">
+        <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-panel-group__item-nobottommargin">
+          <div class="nhsuk-panel">
+            <h3>Address</h3>
+            <p>Gospel Oak Health Centre<br>
+            Lismore Circus<br>
+            London<br>
+            NW5 4QD</p>
+            <p><a href="https://www.google.com/maps/dir/N19+3QL,+Hornsey+Rd,+London/Gospel+Oak+Health+Centre,+5+Lismore+Circus,+London+NW5+4RA/@51.560381,-0.1725314,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x48761bbb67454d03:0xf06fc74c70eff7fb!2m2!1d-0.124023!2d51.5690894!1m5!1m1!1s0x48761af714a893c1:0x9bef32a8105b7946!2m2!1d-0.1549951!2d51.5524848">Get directions</a></p>
+          </div>
+        </div>
+        <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+          <div class="nhsuk-panel">
+            <h3>Telephone</h3>
+            <p>Unknown</p>
+          </div>
+        </div>
+      </div>
+      <div class="nhsuk-action-link nhsuk-u-margin-bottom-8">
+        <a class="nhsuk-action-link__link" href="/p2/services-near-you/dentist">
+          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+          </svg>
+          <span class="nhsuk-action-link__text">Find another dentist</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h2>Taking on new NHS patients</h2>
+      <p>This practice has not provided information in the last 90 days.</p>
+      <p class="nhsuk-body-s">Last updated on 09/02/2016</p>
+
+      <h2>Opening times</h2>
+      <div class="nhsuk-table-responsive">
+        <table class="nhsuk-table">
+          <caption class="nhsuk-table__caption">Opening times</caption>
+          <thead class="nhsuk-table__head">
+            <tr class="nhsuk-table__row">
+              <th class="nhsuk-table__header" scope="col">Day</th>
+              <th class="nhsuk-table__header" scope="col">Opening hours</th>
+            </tr>
+          </thead>
+          <tbody class="nhsuk-table__body">
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Monday</td>
+              <td class="nhsuk-table__cell ">Unknown</td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Tuesday</td>
+              <td class="nhsuk-table__cell ">Unknown</td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Wednesday</td>
+              <td class="nhsuk-table__cell ">Unknown</td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Thursday</td>
+              <td class="nhsuk-table__cell ">Unknown</td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Friday</td>
+              <td class="nhsuk-table__cell ">Unknown</td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Saturday</td>
+              <td class="nhsuk-table__cell ">Unknown</td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Sunday</td>
+              <td class="nhsuk-table__cell ">Unknown</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <h2>Customer facilities</h2>
+      <br>
+
+      <h2>Accessibility</h2>
+      <br>
+
+      <h2>Dentists at this surgery</h2>
+      <br>
+
+      <h2>What patients say</h2>
+      <br>
+
+      <div class="nhsuk-action-link">
+        <a class="nhsuk-action-link__link" href="/dentists/leave-review">
+          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+          </svg>
+          <span class="nhsuk-action-link__text">Leave a review</span>
+        </a>
+      </div>
+      <hr>
+
+      <p><a href="#">Report an issue with the information on this page</a></p>
+
+    </div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside this block -->
+{% block footer %}
+  {{ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Sitemap"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      }
+    ]
+  })}}
+{% endblock %}
