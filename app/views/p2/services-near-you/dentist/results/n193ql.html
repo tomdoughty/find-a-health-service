@@ -96,11 +96,14 @@
       </ul>
       <hr>
 
-      <p><a href="/p2/services-near-you/dentist/results/n193ql-more#second-set-of-results">Show more dentists</a></p>
+     </div>
 
-      
-
-
+      <div class="nhsuk-grid-column-two-thirds"> 
+        {{ pagination({
+          "nextUrl": "/p2/services-near-you/dentist/results/n193ql-page2",
+          "nextPage": "Page 2"
+        }) }}
+      </div>
+    
     </div>
-  </div>
 {% endblock %}
