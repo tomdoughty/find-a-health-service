@@ -1,0 +1,230 @@
+<!-- This layout is setup for NHS.UK pages -->
+
+<!-- Extends the layout from /docs/views/layouts/layout.html -->
+{% extends "layout.html" %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  Montreal Dental Care - Ratings and reviews
+{% endblock %}
+
+<!-- Header goes inside this block -->
+{% block header %}
+  {{ header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+          "url"  : "#",
+          "label" : "Health A-Z"
+        },
+        {
+          'url' : '#',
+          'label' : 'Live Well'
+        },
+        {
+          'url'  : '#',
+          'label' : 'Care and support'
+        },
+        {
+          'url'  : '#',
+          'label' : 'Health news'
+        },
+        {
+          'url' : '#',
+          'label' : 'Services near you'
+        }
+      ]
+    })
+  }}
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p3/">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p3/services-near-you">Services near you</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p3/services-near-you/dentist">Find a dentist</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p3/services-near-you/dentist/results/ls74nb">Search results</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p3/services-near-you/dentist/results/ls74nb">Search results</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        <span role="text">
+          Ratings and reviews
+          <span class="nhsuk-page-heading__small">
+            <span class="visually-hidden"> -</span>
+            Montreal Dental Care
+          </span>
+        </span>
+      </h1>
+
+      <nav class="nhsuk-contents-list nhsuk-u-margin-bottom-6" role="navigation" aria-label="Pages in this guide">
+        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+        <ol class="nhsuk-contents-list__list">
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="/p3/services-near-you/dentist/profiles/montreal-dc/overview/">Overview</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="/p3/services-near-you/dentist/profiles/montreal-dc/services/">Tresatments and services</a>
+          </li>
+          <li class="nhsuk-contents-list__item" aria-current="page">
+            <span class="nhsuk-contents-list__current">Ratings and reviews</span>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="/p3/services-near-you/dentist/profiles/montreal-dc/leave-review/">Leave a review</a>
+          </li>
+        </ol>
+      </nav>
+
+      <h2>Ratings</h2>
+      <div class="nhsuk-table-responsive">
+        <table class="nhsuk-table">
+          <caption class="nhsuk-table__caption">Ratings</caption>
+          <thead class="nhsuk-table__head">
+            <tr class="nhsuk-table__row">
+              <th class="nhsuk-table__header" scope="col">Category</th>
+              <th class="nhsuk-table__header" scope="col">Rating</th>
+            </tr>
+          </thead>
+          <tbody class="nhsuk-table__body">
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Appointments</td>
+              <td class="nhsuk-table__cell"><span class="stars">★★★★★</span></td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Dignity & Respect</td>
+              <td class="nhsuk-table__cell "><span class="stars">★★★★★</span></td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Involvement in decisions</td>
+              <td class="nhsuk-table__cell "><span class="stars">★★★★★</span></td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Information on treatment cost</td>
+              <td class="nhsuk-table__cell "><span class="stars">★★★★★</span></td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">Outcome of treatment</td>
+              <td class="nhsuk-table__cell "><span class="stars">★★★★★</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <h2 class="nhsuk-u-margin-bottom-4">Reviews</h2>
+
+      <hr style="clear: both;">
+
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-0" id="1"><b>Just fabulous</b></p>
+      <span class="starssmall">★★★★★</span>
+      <p>by amanda burleigh <span class="nhsuk-body-s" style="display:inline">- Posted on 21 August 2019</span></p>
+      <p>Respectful, friendly and holistic care. Myself and my children moved to this surgery some years ago and the fantastic care has been consistent and it is a pleasure attending. Thank you very much</p>
+      <p class="nhsuk-body-s">Visited August 2019</p>
+      <p><a href="#">Report as unsuitable</a></p>
+      <p class="nhsuk-body-s">Montreal Dental Care has not yet replied.</p>
+      <hr>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-0" id="2"><b>lovely staff, very gentle with procedures and explanations</b></p>
+      <span class="starssmall">★★★★★</span>
+      <p>by Fiona <span class="nhsuk-body-s" style="display:inline">- Posted on 18 May 2018</span></p>
+      <p>The staff in this practice are wonderful. Very empathetic and gentle whether answering the phone or undertaking treatment. As a youngster I had a poor experience of dentistal care, here I fell safe and well cared for.</p>
+      <p class="nhsuk-body-s">Visited May 2018</p>
+      <p><a href="#">Report as unsuitable</a></p>
+      <p class="nhsuk-body-s">Montreal Dental Care has not yet replied.</p>
+      <hr>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-0" id="3"><b>Fantastic as always</b></p>
+      <span class="starssmall">★★★★★</span>
+      <p>by sajad <span class="nhsuk-body-s" style="display:inline">- Posted on 15 May 2018</span></p>
+      <p>Been a patient here for several years now and I can honestly say that they have never disappointed me. Friendly and always accommodating, and the ladies at the desk are always smiling and willing to assist.</p>
+      <p>Hope to remain here for many years.</p>
+      <p>Thank you all @ Montreal :)</p>
+      <p class="nhsuk-body-s">Visited April 2018</p>
+      <p><a href="#">Report as unsuitable</a></p>
+      <p class="nhsuk-body-s">Montreal Dental Care has not yet replied.</p>
+      <hr>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-0" id="4"><b>Unprofessional reception staff</b></p>
+      <span class="starssmall">★★★</span>
+      <p>by Anonymous <span class="nhsuk-body-s" style="display:inline">- Posted on 14 February 2018</span></p>
+      <p>Every time I ring or go in to the practice, the reception staff are really quite rude and unprofessional. They are often on their phones behind the desk and their phone manner itself is poor. I was greeted with laughter when I called the other day! This needs addressing.</p>
+      <p class="nhsuk-body-s">Visited February 2018</p>
+      <p><a href="#">Report as unsuitable</a></p>
+      <p class="nhsuk-body-s">Montreal Dental Care has not yet replied.</p>
+      <hr>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-0" id="5"><b>Most wonderful dentist, gentle and patient as can be!</b></p>
+      <span class="starssmall">★★★★★</span>
+      <p>by Anonymous <span class="nhsuk-body-s" style="display:inline">- Posted on 23 December 2017</span></p>
+      <p>Due to the state of my teeth, I have had to visit many dentists over the years. I can say that my experience today was the most positive one, ever.</p>
+      <p>The dentist took time to explain everything, patiently answering my nervous questions. I have always been anxious but he quickly put me at ease, never making me feel like things were out of my control.<br>
+      I know dentists tend to operate on tight schedules but I never felt rushed, or like a bother (like you do with some practices!)<br>
+      My extraction was done quickly, and all my aftercare explained well.</p>
+      <p>The rest of the staff are friendly, greeting you with smiles on their faces. The practice itself is clean and organised.</p>
+      <p>Thank you to the dentist for your kindness and understanding when treating a very nervous patient. Much appreciated.</p>
+      <p class="nhsuk-body-s">Visited December 2017</p>
+      <p><a href="#">Report as unsuitable</a></p>
+      <p class="nhsuk-body-s">Montreal Dental Care has not yet replied.</p>
+      <hr>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-0" id="6"><b>Lovely practice</b></p>
+      <span class="starssmall">★★★</span>
+      <p>by Anonymous <span class="nhsuk-body-s" style="display:inline">- Posted on 18 September 2017</span></p>
+      <p>I love this dental practice! The appointments run to time, receptionists are friendly and my dentist is great, really puts me at ease, is thorough and explains everything well. I attended my appointment today with my 3 month old baby in tow. The dentist and nurse were both very understanding when he got a bit grizzly and a 3rd staff member came in to soothe him while I had my scale and polish done. Thanks</p>
+      <p class="nhsuk-body-s">Visited September 2017</p>
+      <p><a href="#">Report as unsuitable</a></p>
+      <p class="nhsuk-body-s">Montreal Dental Care has not yet replied.</p>
+      <hr>
+      <div class="nhsuk-action-link">
+        <a class="nhsuk-action-link__link" href="/dentists/leave-review">
+          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+          </svg>
+          <span class="nhsuk-action-link__text">Leave a review</span>
+        </a>
+      </div>
+      <hr>
+
+      <p><a href="">Report an issue with the information on this page</a></p>
+
+    </div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside this block -->
+{% block footer %}
+  {{ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Sitemap"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      }
+    ]
+  })}}
+{% endblock %}

@@ -1,0 +1,162 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-home-p2.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find a health service prototypes
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p3/">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p3/services-near-you">Services near you</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/p3/services-near-you/dentist">Find a dentist</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/p3/services-near-you/dentist">Find a dentist</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        Dentists near LS7 4NB
+      </h1>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Filter
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+        {% include "p3/services-near-you/filters/dentist.html" %}
+        </div>
+      </details>
+
+      <div id="results">
+        <hr>
+        <div class="car-parking step-free-access wheelchair-access disabled-wc">
+          <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">0.2 miles away</p>
+          <h2><a href="/p3/services-near-you/dentist/profiles/montreal-dc/overview">Montreal Dental Care</a></h2>
+          <ul class="nhsuk-list">
+            <li>5 out of 5 stars (6 patient reviews)</li>
+          </ul>
+          <ul class="nhsuk-list">
+            <li>8 Montreal Avenue, Chapel Allerton , Leeds, West Yorkshire, LS7 4LF </li>
+            <li>0113 2621663</li>
+            <li><a href="https://www.google.com/maps/dir/Town+Street,+Leeds+LS7+4NB/Montreal+Dental+Care,+Montreal+Avenue,+Leeds/@53.827711,-1.5377006,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x48795beeef450875:0xa4fd1ee716c97110!2m2!1d-1.5367052!2d53.8287672!1m5!1m1!1s0x48795bee6e608841:0xa29f2bd8dafd5572!2m2!1d-1.534308!2d53.8265902!3e3">Map and directions</a></li>
+          </ul>
+          <hr>
+        </div>
+        <div class="">
+          <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">0.2 miles away</p>
+          <h2><a href="/p3/services-near-you/dentist/profiles/temple-practice/overview">The Temple Practice (Leeds Dental Team Limited)</a></h2>
+          <ul class="nhsuk-list">
+            <li>No patient reviews</li>
+          </ul>
+          <ul class="nhsuk-list">
+            <li>Dental Surgery, 2 Harrogate Road, LEEDS , West Yorkshire, LS7 4LA </li>
+            <li><a href="https://www.google.com/maps/dir/Town+Street,+Leeds+LS7+4NB/The+Temple+Practice,+Harrogate+Road,+Leeds/@53.8371872,-1.5542838,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x48795beeef450875:0xa4fd1ee716c97110!2m2!1d-1.5367052!2d53.8287672!1m5!1m1!1s0x48795bc67736f513:0xfeae9c936f663ef3!2m2!1d-1.5344966!2d53.8452231!3e3">Map and directions</a></li>
+          </ul>
+          <hr>
+        </div>
+        <div class="induction-loop">
+          <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">0.8 miles away</p>
+          <h2><a href="/p3/services-near-you/dentist/profiles/crossgates/overview">The Crossgates Ln & Chapeltown Rd DP Partners</a></h2>
+          <ul class="nhsuk-list">
+            <li>5 out of 5 stars (1 patient review)</li>
+          </ul>
+          <ul class="nhsuk-list">
+            <li>168 Chapletown Road , Leeds, West Yorkshire, LS7 4HP</li>
+            <li>0113 2622303</li>
+            <li><a href="https://www.google.com/maps/dir/Town+Street,+Leeds+LS7+4NB/168+Chapeltown+Road,+Leeds,+West+Yorkshire+LS7+4HP/@53.8229068,-1.5430309,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x48795beeef450875:0xa4fd1ee716c97110!2m2!1d-1.5367052!2d53.8287672!1m5!1m1!1s0x48795bf44050bf13:0xc6288e7107638102!2m2!1d-1.5311158!2d53.8179178!3e3">Map and directions</a></li>
+          </ul>
+          <hr>
+        </div>
+        <div class="car-parking">
+          <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">0.8 miles away</p>
+          <h2><a href="/p3/services-near-you/dentist/profiles/precious-dc/overview">Precious Dental Care</a></h2>
+          <ul class="nhsuk-list">
+            <li>4.5 out of 5 stars (12 patient reviews)</li>
+          </ul>
+          <ul class="nhsuk-list">
+            <li>20 Gledhow Avenue, Roundhay , Leeds, West Yorkshire, LS8 1NU </li>
+            <li>0113 2667370</li>
+            <li><a href="https://www.google.com/maps/dir/Town+Street,+Leeds+LS7+4NB/Precious+Dental+Care,+20+Gledhow+Ave,+Leeds+LS8+1NU/@53.8349287,-1.5371876,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x48795beeef450875:0xa4fd1ee716c97110!2m2!1d-1.5367052!2d53.8287672!1m5!1m1!1s0x48795b97ac337aef:0xc00bc886d11ca48c!2m2!1d-1.5170293!2d53.8336753!3e3">Map and directions</a></li>
+          </ul>
+          <hr>
+        </div>
+        <div class="car-parking wheelchair-access disabled-wc">
+          <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">0.9 miles away</p>
+          <h2><a href="#">CHANA</a></h2>
+          <ul class="nhsuk-list">
+            <li>4.5 out of 5 stars (5 patient reviews)</li>
+          </ul>
+          <ul class="nhsuk-list">
+            <li>74 Avenue Hill, Leeds, W Yorkshire, LS8 4EZ</li>
+            <li>0113 2623389</li>
+            <li><a href="https://www.google.com/maps/dir/Town+Street,+Leeds+LS7+4NB/Chana+Dental+Practice,+Avenue+Hill,+Leeds/@53.8229068,-1.5380009,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x48795beeef450875:0xa4fd1ee716c97110!2m2!1d-1.5367052!2d53.8287672!1m5!1m1!1s0x48795b8c13b63735:0xfa824f86facdf815!2m2!1d-1.5210558!2d53.8203705!3e3">Map and directions</a></li>
+          </ul>
+          <hr>
+        </div>
+        <div class="accepting-children accepting-adults accepting-adults-free-dental-care">
+          <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">0.9 miles away</p>
+          <h2><a href="#">Bupa Dental Care</a></h2>
+          <ul class="nhsuk-list">
+            <li>5 out of 5 stars (1 patient review)</li>
+          </ul>
+          <ul class="nhsuk-list">
+            <li>Bupa Dental Care, 87 King Lane, Moortown , Leeds, LS17 5AX</li>
+            <li>0113 2685711</li>
+            <li><a href="https://www.google.com/maps/dir/Town+Street,+Leeds+LS7+4NB/Bupa+Dental+Care+Moortown,+King+Lane,+Leeds/@53.8348219,-1.5493717,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x48795beeef450875:0xa4fd1ee716c97110!2m2!1d-1.5367052!2d53.8287672!1m5!1m1!1s0x48795bdc78b59931:0x9fde64a838dc10aa!2m2!1d-1.544608!2d53.8410779!3e3">Map and directions</a></li>
+          </ul>
+          <hr>
+        </div>
+        <div class="car-parking wheelchair-access step-free-access disabled-wc">
+          <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">0.9 miles away</p>
+          <h2><a href="#">Stainbeck Dental Surgery</a></h2>
+          <ul class="nhsuk-list">
+            <li>3 out of 5 stars (8 patient review)</li>
+          </ul>
+          <ul class="nhsuk-list">
+            <li>58 Stainbeck Road, Leeds , W Yorkshire, LS7 2PW</li>
+            <li>0113 230 4010</li>
+            <li><a href="https://www.google.com/maps/dir/Town+Street,+Leeds+LS7+4NB/Stainbeck+Dental+Surgery,+Stainbeck+Road,+Leeds/@53.8280716,-1.5576156,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x48795beeef450875:0xa4fd1ee716c97110!2m2!1d-1.5367052!2d53.8287672!1m5!1m1!1s0x487959596395250d:0x338c463cdce1207e!2m2!1d-1.560575!2d53.8271585!3e3">Map and directions</a></li>
+          </ul>
+          <hr>
+        </div>
+        <div class="">
+          <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">1.0 miles away</p>
+          <h2><a href="#">Corner House Dental Practice</a></h2>
+          <ul class="nhsuk-list">
+            <li>5 out of 5 stars (43 patient review)</li>
+          </ul>
+          <ul class="nhsuk-list">
+            <li>Day Treatment Centre, Whittington Hospital, Magdala Avenu, London, N19 5NF</li>
+            <li>0113 2665184</li>
+            <li><a href="https://www.google.com/maps/dir/Town+Street,+Leeds+LS7+4NB/Corner+House+Dental+Practice,+Leeds/@53.835983,-1.5535856,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x48795beeef450875:0xa4fd1ee716c97110!2m2!1d-1.5367052!2d53.8287672!1m5!1m1!1s0x48795bc6a07ac571:0xaa817b2e553828d3!2m2!1d-1.5340438!2d53.842429!3e3">Map and directions</a></li>
+          </ul>
+          <hr>
+        </div>
+      </div>
+
+  </div>
+</div>
+{% endblock %}
