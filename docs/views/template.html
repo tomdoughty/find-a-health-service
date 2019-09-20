@@ -74,6 +74,8 @@
 
   <body class="{{ bodyClasses }}">
 
+    {% include "includes/cookie-banner.html" %}
+
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     {% block bodyStart %}{% endblock %}
 
